@@ -1,0 +1,32 @@
+.student{
+    border: 1px solid black;
+    padding:20px;
+    max-width: 400px;
+    background-color: aqua;
+    font-style: initial;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+.grid-view{
+    display: grid;
+    
+ 
+    gap: 20px;
+  
+    grid-template-columns: repeat(3,1fr);
+    
+
+    
+}
+@media (max-width:900px){
+    .grid-view {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media (max-width:400px){
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+    
+}
